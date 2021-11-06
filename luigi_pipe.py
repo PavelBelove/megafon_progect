@@ -57,7 +57,6 @@ class PredictProbability(luigi.Task):
         answers_test.to_csv('answers_test.csv', float_format='%20f', index=False, encoding='utf8',sep=',')
 
 
-
     def output(self):
         return luigi.LocalTarget('answers_test.csv')
 
