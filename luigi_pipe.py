@@ -50,7 +50,7 @@ class PredictProbability(luigi.Task):
         # predict
         answers_test = test
 
-        answers_test['target'] = model.predict_proba(X_valid)[:, 1]
+        answers_test['target'] = model. (X_valid)[:, 1]
 
         # save result
 
